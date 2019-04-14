@@ -9,10 +9,15 @@ print(bytes_with_content)
 
 # Bytesarray kann verändert werden
 
-empty_bytearray = bytearray(10)
+bytearray = bytearray(10)
 
-print(empty_bytearray)
+print(bytearray)
 
-empty_bytearray[0] = 254
+bytearray[0] = 254
+bytearray.append(255)
 
-print (empty_bytearray)
+print(bytearray)
+
+# Bytesarray in Bytes umwandeln
+immutable = bytes(bytearray)
+print(immutable)
